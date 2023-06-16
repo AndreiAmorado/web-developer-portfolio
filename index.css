@@ -1,5 +1,33 @@
+body {
+	font-family: 'Bebas Neue', sans-serif;
+	color: floralwhite;
+}
+
 #landing {
-	font-family: ;font-family: 'Bebas Neue', sans-serif;
-	background-image: url(images/hollowed-boxes.png);
-	background-size: 10%;
+	background-image: url(images/box-bg.png);
+	background-size: 20%;
+	font-family: 'Bebas Neue', sans-serif;
+	color: floralwhite;
+}
+
+#navbartop {
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+#projects {
+	font-family: 'Bebas Neue', sans-serif;
+	color: floralwhite;
+}
+
+#contact-section {
+	background-image: url(images/box-bg.png);
+	background-size: 20%;
+	font-family: 'Bebas Neue', sans-serif;
+}
+#tools {
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+#services {
+	font-family: 'Bebas Neue', sans-serif;
 }

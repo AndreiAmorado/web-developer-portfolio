@@ -3,25 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Capstone1</title>
-	<!-- Google Font -->
+	<title>Capstone 1</title>
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 	
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="./index.css">
+
 	<!-- CSS Bootstrap -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 <body>
 
+
 	<!-- Navbar Start -->
-	<nav class="navbar navbar-expand-lg bg-dark">
-	  <a class="navbar-brand" href="#">Andrei Amorado</a>
+
+	<nav id="navbartop" class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#landing">Andrei Von Amorado</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -29,32 +32,282 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav ml-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="#landing">About Me<span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Projects</a>
+	        <a class="nav-link" href="#navigate1">Projects</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Tools</a>
+	        <a class="nav-link" href="#tools">Tools</a>
 	      </li>
 	    </ul>
 	  </div>
 	</nav>
+
 	<!-- Navbar End -->
 
-	<!-- Main Section -->
+	<!-- Main Content Section Start -->
+	<div id="services" class="container-fluid text-center bg-secondary">
+		<div class="row">
+			<!-- Left Side Navbar Start -->
+			<div class="card col-xl-2 d-none d-xl-block p-0 text-white">
+				<div class="accordion" id="accordionExample">
+				<!-- Services Start -->
+				  <div class="card text-white">
+				    <div class="card-header bg-secondary text-white" id="headingOne">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link btn-block text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Services
+				        </button>
+				      </h2>
+				    </div>
 
-	<div class="container-fluid">
-		<div id="landing" class="row bg-warning justify-content-center align-items-center py-4 py-lg-5">
-			<div class="col-10 col-md-3 p-3 py-lg-5">
-				<img src="./images/gojo.jpg" class="rounded-circle border border-dark img-fluid">
-				
-				<h1>Andrei Amorado</h1>
-				<h3>Full-Stack Web Developer</h3>
+				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+				      <div class="card-body">
+				        <ul class="text-justify" style="list-style: none;">
+				        	<li><a href="https://www.interaction-design.org/literature/topics/web-design" target="_blank"> Web-page Designing </a></li>
+				        	<li><a href="https://squashapps.com/blog/back-end-development-services/" target=
+				        		"_blank"> Back-end Programming </a></li>
+				        	<li><a href="https://www.toptal.com/services/full-stack-development" target="_blank"> Full-Stack Development </a></li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				<!-- Services End -->
+
+				<!-- Projects Starts -->
+				  <div id="projects" class="card text-white">
+				    <div class="card-header bg-secondary" id="headingTwo">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link btn-block text-left collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Projects
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				      <div class="card-body">
+				        <ul class="text-justify text-white" style="list-style: none;">
+				        	<li><a href=""> Web Designs </a></li>
+				        	<li><a href=""> E-Commerce API</a></li>
+				        	<li><a href=""> E-Commerce </a></li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				<!-- Projects End -->
+
+				<!-- Tools Starts -->
+				  <div id="tools" class="card">
+				    <div class="card-header bg-secondary text-white" id="headingThree">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link btn-block text-left collapsed bg-secondary text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Tools
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+				      <div class="card-body">
+				        <ul class="text-justify" style="list-style: none;">
+				        	<li><a href="https://www.mongodb.com/mern-stack#:~:text=MERN%20stands%20for%20MongoDB%2C%20Express,a%20client%2Dside%20JavaScript%20framework" target="_blank"> Core Tools </a></li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				<!-- Tools End -->
+				</div>
+			</div>
+			<!-- Left Side Navbar End -->
+
+			<!-- Right Side Content Section Start -->
+			<div class="col-xl-10 p-0">
+				<!-- Profile Section Start -->
+				<div id="landing" class="container-fluid min-vh-100 p-3 p-md-5">
+					<img src="./images/gojodomain.gif" width="300" height="300" class="mt-5 mt-md-0 rounded-circle">
+
+					<h1>Andrei Von C. Amorado</h1>
+					<h3>Full-Stack Web Developer</h3>
+
+
+					<div class="row mt-5">
+						<div class="offset-md-2 col-md-8">
+							<h2>
+								Hi! I'm an aspiring developer and a career shifter from teaching. I'm also an avid gamer who enjoys different types of games and would like to develop one someday.
+							</h2>
+						</div>
+					</div>
+
+					<!-- Carousel Section Start -->
+					
+					<!-- Carousel Section End -->
+
+				</div>		
+				<!-- Profile Section End -->
+
+				<!-- Other Projects Section Start  -->
+				<div id="projects" class="bg-secondary text-light min-vh-100 p-5">
+					<h2 class="mb-3">PROJECTS</h2>
+
+					<!-- Other Project Section Container Start -->
+					<div class="p-md-5 d-lg-flex justify-content-center">
+						<!-- HTML Card Start -->
+						<div class="card bg-dark col-xl-4 mb-5 mb-xl-0">
+						  <div class="card-body">
+						  	<img src="./images/webpage3.jpg" class="img-fluid">
+						    <h5 class="card-title mt-3">Web-page Designing</h5>
+						    <h6 class="card-subtitle mb-2 text-muted">Front-End Programming</h6>
+						    <p class="card-text">	
+						    	Web design using front-end technology involves creating the visual and interactive elements that users see and interact with on a website. Front-end designers use HTML, CSS, and JavaScript to structure and style web pages, implement responsive layouts, and enhance user experience through animations and interactive features. They collaborate with UX/UI designers to ensure the website's aesthetics align with the brand and deliver a seamless user journey. Front-end designers focus on optimizing performance, accessibility, and cross-browser compatibility to ensure the website is visually appealing and functional across different devices and platforms. Their expertise lies in translating design mockups into code to create engaging and user-friendly web interfaces.
+						    </p>
+						    <a href="#" class="card-link">Link to Project</a>
+						  </div>
+						</div>
+						<!-- HTML Card End -->
+
+						<!-- Bootstrap Card Start -->
+						<div class="card bg-dark col-xl-4 mb-5 mb-xl-0 mx-xl-5">
+						  <div class="card-body">
+						  	<img src="./images/e-commerce.png" class="img-fluid">
+						    <h5 class="card-title mt-3">E-Commerce</h5>
+						    <h6 id="navigate1" class="card-subtitle mb-2 text-muted">Back-End Programming</h6>
+						    <p class="card-text">
+						    	Web development using back-end technology in e-commerce involves building the server-side infrastructure and functionality that powers online stores. It focuses on handling data, processing transactions, and managing user interactions. Back-end developers utilize programming languages like Python, Java, or PHP, along with frameworks such as Django, Spring, or Laravel, to create robust and scalable e-commerce platforms. They integrate payment gateways, manage databases, and develop APIs for seamless communication between the front-end and back-end systems. Back-end development in e-commerce plays a crucial role in ensuring secure transactions, efficient inventory management, and personalized user experiences.
+						    </p>
+						    <a href="#" class="card-link">Link to Project</a>
+						  </div>
+						</div>
+						<!-- Bootstrap Card End -->
+
+						<!-- NodeJS Card Start -->
+						<div class="card bg-dark col-xl-4 mb-5 mb-xl-0">
+						  <div class="card-body">
+						  	<img src="./images/e-commerce.png" class="img-fluid">
+						    <h5 class="card-title mt-3">E-Commerce API</h5>
+						    <h6 class="card-subtitle mb-2 text-muted">Full-Stack</h6>
+						    <p class="card-text">
+						    	Web development using back-end technology in e-commerce involves building the server-side infrastructure and functionality that powers online stores. It focuses on handling data, processing transactions, and managing user interactions. Back-end developers utilize programming languages like Python, Java, or PHP, along with frameworks such as Django, Spring, or Laravel, to create robust and scalable e-commerce platforms. They integrate payment gateways, manage databases, and develop APIs for seamless communication between the front-end and back-end systems. Back-end development in e-commerce plays a crucial role in ensuring secure transactions, efficient inventory management, and personalized user experiences.
+						    </p>
+						    <a href="#" class="card-link">Link to Project</a>
+						  </div>
+						</div>
+						<!-- NodeJS Card End -->
+					</div>
+					<!-- Other Project Section Container End -->
+
+				</div>
+
+					<div id="tools" class="container-fluid bg-dark p-5 text-white">
+						<h3 class="text-center mt-3">TOOLS:</h3>
+
+						<div id="other-tools" class="d-flex flex-md-column">
+						    <div class="d-md-flex justify-content-center" id="tools-1">
+						        <img width="150" src="images/logo-mongodb.png"/>
+						        <img width="150" src="images/logo-nodejs.png"/>
+						        <img width="150" src="images/logo-expressjs.png"/>
+						        <img width="150" src="images/logo-react.png"/>
+						        <img width="150" src="images/logo-heroku.png"/>
+						    </div>
+						    <div class="d-md-flex justify-content-center" id="tools-2">
+						        <img width="150" src="images/logo-git.png"/>
+						        <img width="150" src="images/logo-sublime-text-3.png"/>
+						        <img width="150" src="images/logo-postman.png"/>
+						        <img id="lastimage1" width="150" src="images/logo-gitlab-ci-cd.png"/>
+						    </div>
+						</div>						
+					</div>	
+
+				<!-- Other Projects Section End  -->
+
+				<!-- Contact Section Start -->
+				<div id="contact-section" class="container-fluid bg-dark p-5 text-white">
+					<h2>Contact Me</h2>
+						<div class ="row mt-5 d-flex justify-content-center ">
+							<div class="col-sm-12 col-lg-8 col-md-8 col-xl-4 rounded py-3">
+									<form id="form-col">
+									  <div class="form-group">
+									    <label for="Name">Name</label>
+									    <input type="email" class="form-control" id="name" placeholder="Your Name">
+									  </div>
+									  <div class="form-group">
+									    <label for="email">Email address</label>
+									    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+									  </div>
+									  <div class="form-group">
+									    <label for="contact">Contact Number</label>
+									    <input type="number" class="form-control" id="contact" placeholder="63 900 000 0000">
+									  </div>
+									  <div class="form-group">
+									    <label for="exampleFormControlSelect1">Concern</label>
+									    <select class="form-control" id="exampleFormControlSelect1">
+									      <option>Quotation</option>				
+									    </select>
+									  </div>
+
+									 
+									  <div class="form-group">
+									    <label for="exampleFormControlTextarea1">Message</label>
+									    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+									  </div>
+
+
+									  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Send Email</button>
+									</form>
+									<div id="myModal" class="modal fade text-dark" role="dialog">
+									        <div class="modal-dialog">
+									            <div class="modal-content">
+									                <div class="modal-header">
+									                    <h4 class="modal-title">I'll make sure to reply ASAP!</h4>
+									                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+									                </div>
+									                <div class="modal-body">
+									                    <p>Message Successfully Sent!</p>
+									                </div>
+									                <div class="modal-footer">
+									                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									                </div>
+									            </div>
+									        </div>
+									    </div>
+						<div id="contact" class="row justify-content-center mb-5 p-3 my-4"> 
+						<div class="col-3 col-md-1">
+			                <a href="https://www.facebook.com/" target="_blank">
+			                  <i class="fab fa-facebook"></i></a>
+			            </div>	
+			            <div class="col-3 col-md-1">
+			                 <a href="https://instagram.com/" target="_blank">
+			                   <i class="fab fa-instagram"></i></a>
+			             </div>	
+			             <div class="col-3 col-md-1">
+			                 <a href="https://twitter.com/" target="_blank">
+			                   <i class="fab fa-twitter"></i></a>
+			                                    </div>						    
+									</body>
+									</html>
+						</div>
+							</div>
+						</div>
+
+
+					
+
+				</div>
+
+
 
 			</div>
+			<!-- Right Side Content Section End -->
+				
+
+
+
+		</div>
+
+
+
+			
+
 		</div>
 	</div>
+	<!-- Main Content Section End -->
 
 
 
@@ -62,6 +315,12 @@
 
 
 
+
+	<!-- JS Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
 
 
 
